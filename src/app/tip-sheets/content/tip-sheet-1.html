@@ -11,22 +11,38 @@
     </p>
   </div>
   <section class="section">
-    <div style="display: flex; flex-direction: row">
+    <div style="display: flex; flex-direction: row;">
       <p translate style="font-size: 20px;">
         Set aside time to spend with each child.
       </p>
-      <img class="blobs-playing-with-blocks" src="assets/images/blobs_playing_with_blocks.svg">
+      <img
+        class="blobs-playing-with-blocks"
+        src="assets/images/blobs_playing_with_blocks.svg"
+      />
     </div>
-    <span translate>It can be for just 20 minutes, or longer - it's up to us. It can be at
-      the same time each day so children or teenagers can look forward to it.</span>
-    <button translate [routerLink]="['/activities']" class="try-activity-btn">
+    <span translate
+      >It can be for just 20 minutes, or longer - it's up to us. It can be at
+      the same time each day so children or teenagers can look forward to
+      it.</span
+    >
+    <button
+      translate
+      style="font-size: 20px;"
+      [routerLink]="['/activities']"
+      class="try-activity-btn"
+    >
       Try an activity!
     </button>
   </section>
   <section class="section">
-    <div class="section-header" (click)="teenSectionExpanded = !teenSectionExpanded">
+    <div
+      class="section-header"
+      (click)="teenSectionExpanded = !teenSectionExpanded"
+    >
       <h2 translate>Ideas with your baby/toddler</h2>
-      <ion-icon name="{{ teenSectionExpanded ? 'chevron-up-outline' : 'chevron-down-outline' }}"></ion-icon>
+      <ion-icon
+        name="{{ teenSectionExpanded ? 'chevron-up-outline' : 'chevron-down-outline' }}"
+      ></ion-icon>
     </div>
     <div *ngIf="teenSectionExpanded">
       <ul>
@@ -37,14 +53,16 @@
       </ul>
       <div class="story-container">
         <p class="top-text">We are making a delicious meal together!</p>
-        <img src="assets/images/stories/making-a-meal-baby1/0.svg">
+        <img src="assets/images/stories/making-a-meal-baby1/0.svg" />
       </div>
     </div>
   </section>
   <section class="section">
     <div class="section-header" (click)="section2Expanded = !section2Expanded">
       <h2 translate>Ideas with your teenager</h2>
-      <ion-icon name="{{ section2Expanded ? 'chevron-up-outline' : 'chevron-down-outline' }}"></ion-icon>
+      <ion-icon
+        name="{{ section2Expanded ? 'chevron-up-outline' : 'chevron-down-outline' }}"
+      ></ion-icon>
     </div>
     <div *ngIf="section2Expanded" style="display: flex;">
       <ul>
@@ -57,9 +75,14 @@
     </div>
   </section>
   <section class="section">
-    <div class="section-header" (click)="childSectionExpanded = !childSectionExpanded">
+    <div
+      class="section-header"
+      (click)="childSectionExpanded = !childSectionExpanded"
+    >
       <h2 translate>Ideas with your young child</h2>
-      <ion-icon name="{{ childSectionExpanded ? 'chevron-up-outline' : 'chevron-down-outline' }}"></ion-icon>
+      <ion-icon
+        name="{{ childSectionExpanded ? 'chevron-up-outline' : 'chevron-down-outline' }}"
+      ></ion-icon>
     </div>
     <ul *ngIf="childSectionExpanded">
       <li translate>Read a book or look at pictures</li>
@@ -91,20 +114,36 @@
     <div>
       <h3 translate>For more information click below links:</h3>
       <button class="footer-button">
-        <a translate
+        <a
+          translate
           href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/healthy-parenting"
-          class="footer-button-links">TIPS FROM WHO</a>
+          class="footer-button-links"
+          >TIPS FROM WHO</a
+        >
       </button>
       <button class="footer-button">
-        <a translate href="https://www.unicef.org/coronavirus/covid-19-parenting-tips" class="footer-button-links">TIPS
-          FROM UNICEF</a>
+        <a
+          translate
+          href="https://www.unicef.org/coronavirus/covid-19-parenting-tips"
+          class="footer-button-links"
+          >TIPS FROM UNICEF</a
+        >
       </button>
       <button class="footer-button">
-        <a translate href="https://www.covid19parenting.com/" class="footer-button-links">WORLD WIDE LANGUAGE</a>
+        <a
+          translate
+          href="https://www.covid19parenting.com/"
+          class="footer-button-links"
+          >WORLD WIDE LANGUAGE</a
+        >
       </button>
       <button class="footer-button">
-        <a translate href="https://www.acceleratehub.org/plh-research-outputs/"
-          class="footer-button-links">EVIDENCE-BASE</a>
+        <a
+          translate
+          href="https://www.acceleratehub.org/plh-research-outputs/"
+          class="footer-button-links"
+          >EVIDENCE-BASE</a
+        >
       </button>
     </div>
   </section>
