@@ -10,7 +10,9 @@ import { TIP_SHEETS } from "../data/tip-sheets.data";
         {{ tipSheet.title }}
       </h2>
     </div>
+    <ion-icon name="arrow-forward-outline"></ion-icon>
   </div>`,
+
   styles: [
     `
       .tip-title-container {
