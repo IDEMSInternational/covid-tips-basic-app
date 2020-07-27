@@ -10,6 +10,9 @@ import { TIP_SHEETS } from "../data/tip-sheets.data";
         {{ tipSheet.title }}
       </h2>
     </div>
+    <div class="tip-list-subtitle">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </div>
   </div>`,
   styles: [
     `
@@ -32,7 +35,7 @@ import { TIP_SHEETS } from "../data/tip-sheets.data";
       }
       .tip-list-subtitle {
         color: var(--ion-color-tertiary);
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         margin: 0;
       }
