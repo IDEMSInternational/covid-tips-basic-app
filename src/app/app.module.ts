@@ -22,6 +22,8 @@ import { AppRoutingModule } from "./app-routing.module";
 import { getErrorHandler } from "src/errorHandler";
 import { environment } from "src/environments/environment";
 import { AppTranslationModule } from "./modules/translation.module";
+import { ServiceWorkerModule } from "@angular/service-worker";
+import { environment } from "../environments/environment";
 
 @NgModule({
   declarations: [AppComponent],
@@ -35,6 +37,9 @@ import { AppTranslationModule } from "./modules/translation.module";
     AngularFirePerformanceModule,
     AngularFireAnalyticsModule,
     AngularFireMessagingModule,
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production,
+    }),
   ],
   providers: [
     StatusBar,
