@@ -1,12 +1,1 @@
-@font-face {
-  font-family: "robotoCondensed";
-  src: url("src/assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "robotoCondensed";
-  src: url("src/assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf")
-    format("truetype");
-  font-weight: bold;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
